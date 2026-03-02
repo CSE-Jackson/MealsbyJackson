@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meals by Jackson — Submit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="logo-col">
+      <div class="logo" aria-hidden="true"></div>
+    </div>
+
+    <main class="panel">
+      <div class="panel-header">
+
+        <div class="logo-small">
+          <img src="logo_web.png" alt="Meals by Jackson Logo">
+        </div>
+
+        <nav class="top-nav">
+          <a href="index.html">Home</a>
+          <a href="recipe1.html">Recipe 1</a>
+          <a href="recipe2.html">Recipe 2</a>
+          <a href="recipe3.html">Recipe 3</a>
+          <a href="submit.html">Submit!</a>
+        </nav>
+
+      </div>
+
+      <div class="recipe-content" style="margin-top: 30px;">
+
+        <h2 style="text-align:center;">Submit Your Own Recipe!</h2>
+
+        <form>
+
+          <div style="margin-bottom:25px;">
+            <label>Name:</label><br>
+            <input type="text" name="name" required>
+          </div>
+
+          <div style="margin-bottom:25px;">
+            <label>Email:</label><br>
+            <input type="email" name="email" required>
+          </div>
+
+          <div style="margin-bottom:25px;">
+            <label>Phone Number:</label><br>
+            <input type="tel" name="phone">
+          </div>
+
+          <div style="margin-bottom:25px;">
+            <label>Recipe Name:</label><br>
+            <input type="text" name="recipeName" required>
+          </div>
+
+          <div style="margin-bottom:30px;">
+            <label>Ingredients / Steps (Limit: 500 characters):</label><br>
+            <textarea name="recipeDetails" maxlength="500" rows="8" required></textarea>
+          </div>
+
+          <div style="text-align:center;">
+            <button type="submit">Submit Recipe</button>
+          </div>
+
+        </form>
+
+        <div class="author">
+          Jackson Williams
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>
