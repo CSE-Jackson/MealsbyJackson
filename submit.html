@@ -16,7 +16,7 @@
       <div class="panel-header">
 
         <div class="logo-small">
-          <img src="logo_web.png" alt="Meals by Jackson Logo">
+          <img src="images/logo_web.png" alt="Meals by Jackson Logo">
         </div>
 
         <nav class="top-nav">
@@ -71,7 +71,35 @@
         </div>
 
       </div>
+
+      <footer class="site-footer">
+  <p class="footer-label">Share this page:</p>
+
+  <div class="share-buttons">
+    <a class="share-btn facebook" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a class="share-btn x" href="#" target="_blank" rel="noopener noreferrer">X</a>
+    <a class="share-btn linkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="share-btn pinterest" href="#" target="_blank" rel="noopener noreferrer">Pinterest</a>
+  </div>
+</footer>
     </main>
   </div>
+
+  <script>
+  const url = encodeURIComponent(window.location.href);
+  const text = encodeURIComponent("Check out this recipe!");
+
+  document.querySelector(".facebook").href =
+    `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+
+  document.querySelector(".x").href =
+    `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+
+  document.querySelector(".linkedin").href =
+    `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+
+  document.querySelector(".pinterest").href =
+    `https://pinterest.com/pin/create/button/?url=${url}&description=${text}`;
+</script>
 </body>
 </html>

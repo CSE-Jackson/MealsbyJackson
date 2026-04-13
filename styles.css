@@ -200,3 +200,43 @@ button {
 button:hover {
   background-color: #e6e6e6;
 }
+.site-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+}
+
+.footer-label {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.share-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.share-btn.facebook { background: #1877f2; }
+.share-btn.x { background: #111111; }
+.share-btn.linkedin { background: #0a66c2; }
+.share-btn.pinterest { background: #bd081c; }
